@@ -24,16 +24,17 @@ body {
 }
 
 .header {
-    background: var(--white);
+    background: transparent;
     padding: 20px 0;
-    position: sticky;
+    position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .navbar {
-    max-width: 1200px;
+    max-width: 1200px;  
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
@@ -52,6 +53,8 @@ body {
 .logo-image {
     height: 50px;
     width: auto;
+    display: block;
+    filter: none;
 }
 
 .nav-menu {
@@ -66,9 +69,13 @@ body {
 
 .nav-menu a {
     text-decoration: none;
-    color: var(--text-gray);
-    font-weight: 500;
-    transition: color 0.3s;
+    color: var(--white);
+    font-family: 'Graphik', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    text-align: center;
 }
 
 .nav-menu a:hover {
@@ -82,27 +89,15 @@ body {
 }
 
 .social-icons a {
-    color: var(--white);
-    background: var(--white);
-    width: 32px;
-    height: 32px;
-    border-radius: 4px;
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.3s;
 }
 
-.social-icons a svg {
-    color: var(--dark-blue);
-}
-
-.social-icons a:hover {
-    background: var(--primary-blue);
-}
-
-.social-icons a:hover svg {
-    color: var(--white);
+.social-icons a img {
+    width: 24px;
+    height: 24px;
 }
 
 .hamburger {
