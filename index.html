@@ -1,17 +1,85 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figma Land</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    
+<body>   
     <header class="header">
-
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="Figma Land Logo" class="logo-image">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><img src="images/icons/twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="images/icons/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="images/icons/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+            <button class="hamburger" aria-label="Menu">
+            
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
     </header>
 
 
+    <section class="hero">
+        <div class="hero-content">
+            <h1>The best products<br>start with Figma</h1>
+            <p class="hero-subtitle">Most calendars are designed for teams. Slate is designed<br>for freelancers</p>
+            <button class="cta-button">Try For Free</button>
+        </div>
+    </section>
+
+
+    <section class="features">
+        <h2 class="features-title">Features</h2>
+        <p class="features-intro">Most calendars are designed for teams.<br>Slate is designed for freelancers</p>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="images/icons/icon1.svg" alt="OpenType features">
+                </div>
+                <h3>OpenType features<br>Variable fonts</h3>
+                <p>Slate helps you see how many more days you need to work</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <span class="icon"></span>
+                </div>
+                <h3>Design with real data</h3>
+                <p>Slate helps you see how many more days you need to work</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <span class="icon">✓</span>
+                </div>
+                <h3>Fastest way to<br>take action</h3>
+                <p>Slate helps you see how many more days you need to work</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="info-icon">
+        <img src="images/icons/location.svg" alt="Location">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
